@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Paws - Dog Seller</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+header{
+    background:#ff914d;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+nav{
+    background:#333;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+}
+
+.hero{
+    background:linear-gradient(to right,#ffcc80,#ffe0b2);
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h1{
+    font-size:45px;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:18px;
+}
+
+.hero button{
+    padding:12px 25px;
+    background:#ff914d;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.hero button:hover{
+    background:#ff6d00;
+}
+
+.container{
+    width:90%;
+    margin:40px auto;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.dogs{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:300px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.price{
+    color:green;
+    font-size:22px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+.card button{
+    width:100%;
+    padding:10px;
+    background:#ff914d;
+    color:white;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.card button:hover{
+    background:#ff6d00;
+}
+
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🐶 Happy Paws Dog Seller</h1>
+    <p>Find Your Perfect Best Friend</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Dogs</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+    <h1>Healthy & Friendly Puppies</h1>
+    <p>Choose from our adorable dog breeds.</p>
+    <button onclick="welcome()">View Puppies</button>
+</section>
+
+<div class="container">
+
+<h2>Available Puppies</h2>
+
+<div class="dogs">
+
+<div class="card">
+<img src="golden.jpg" alt="Golden Retriever">
+<div class="card-content">
+<h3>Golden Retriever</h3>
+<p>Friendly, intelligent, and loyal family dog.</p>
+<p class="price">₹10,000</p>
+<button onclick="buyDog('Golden Retriever')">Buy Now</button>
+</div>
+</div>
+
+<div class="card">
+<img src="beagel.jpg" alt="Beagle">
+<div class="card-content">
+<h3>Beagle</h3>
+<p>Playful and energetic companion.</p>
+<p class="price">₹17500</p>
+<button onclick="buyDog('Beagle')">Buy Now</button>
+</div>
+</div>
+
+<div class="card">
+<img src="german.jpeg" alt="German Shepherd">
+<div class="card-content">
+<h3>German Shepherd</h3>
+<p>Smart, brave, and protective.</p>
+<p class="price">₹11000</p>
+<button onclick="buyDog('German Shepherd')">Buy Now</button>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Happy Paws Dog Seller | All Rights Reserved
+</footer>
+
+<script>
+function welcome(){
+    alert("Welcome to Happy Paws! 🐾");
+}
+
+function buyDog(name){
+    alert("Thank you for choosing the " + name + "! We'll contact you soon.");
+}
+</script>
+
+</body>
+</html>
